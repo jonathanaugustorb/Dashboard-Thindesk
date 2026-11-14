@@ -37,6 +37,45 @@ body {
     padding: 20px;
 }
 
+.dashboard {
+    flex: 1;
+    min-width: 0;
+}
+
+.grafico {
+    position: relative;
+    height: 300px;
+}
+
+.grafico-rosca {
+    height: 200px;
+}
+
+.legenda-status {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+}
+
+.legenda-status li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem 0;
+}
+
+.legenda-status .cor {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    flex-shrink: 0;
+}
+
+.legenda-status .quantidade {
+    margin-left: auto;
+    font-variant-numeric: tabular-nums;
+}
+
 @media (max-width: 768px) {
     #sidebar {
         position: fixed;
@@ -61,5 +100,9 @@ body {
         left: 10px;
         z-index: 1100;
         cursor: pointer;
+    }
+
+    .dashboard {
+        padding-top: 4rem !important;
     }
 }
