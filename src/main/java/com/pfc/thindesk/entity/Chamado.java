@@ -2,6 +2,7 @@ package com.pfc.thindesk.entity;
 
 import java.time.LocalDateTime;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "chamados")
@@ -14,6 +15,7 @@ public class Chamado {
     private String tipo;
     private String tecnico;
     private String usuario;
+    @Indexed
     private LocalDateTime dataAbertura;
     private LocalDateTime dataConclusao;
 
