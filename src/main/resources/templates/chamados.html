@@ -35,7 +35,7 @@
                 <th:block th:each="chamado : ${chamados}">
                     <tr>
                         <td th:text="${chamado?.descricao}"></td>
-                        <td th:text="${chamado?.status}"></td>
+                        <td th:text="${chamado?.status?.descricao}"></td>
                         <td th:text="${chamado?.tipo}"></td>
                         <td th:text="${chamado?.tecnico}"></td>
                         <td th:text="${chamado?.usuario}"></td>
